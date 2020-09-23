@@ -1,0 +1,14 @@
+Comandos Importantes para enumeração:
+
+nmap -A --top-ports 1500 -Pn -n < ip>
+
+dirb <ip>
+
+nikto -h  <ip>
+
+wfuzz >> preencher
+
+
+METODOLOGIA 
+
+pesquisar no google > <webservice> url login first steps documentation
