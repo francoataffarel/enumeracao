@@ -2,6 +2,9 @@ Comandos Importantes para enumeração:
 
 nmap -A --top-ports 1500 -Pn -n < ip>
 
+
+proxychains nmap -A --unprivileged--top-ports 1500 -Pn -n < ip>
+
 dirb <ip>
 
 nikto -h  <ip>
