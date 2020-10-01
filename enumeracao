@@ -14,6 +14,8 @@ wfuzz >> preencher
 
 METODOLOGIA 
 
+ponto de injeção e ponto de execução
+
 pesquisar no google > <webservice> url login first steps documentation
  crunch 7 7 -f /usr/share/crunch/charset.lst mixalpha-numeric-all -t s1lKy@@ > oi.txt
 
